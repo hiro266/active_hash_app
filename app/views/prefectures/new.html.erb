@@ -1,0 +1,6 @@
+<%= form_with(model: @prefecture, local: true) do |f| %>
+  <%= f.collection_select :prefecture_id, Prefecture.all, :id, :name %>
+<% end %>
+<%= form_with(model: @prefecture, local: true) do |f| %>
+  <%= f.collection_check_boxes :prefecture_id, Prefecture.all, :id, :name %>
+<% end %>
